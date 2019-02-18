@@ -1,0 +1,9 @@
+<h1>Games</h1>
+<p>New Game</p>
+<h2 class="letters"><%= @letters %></h2>
+
+<form action="/score">
+  <%= hidden_field_tag :letters, @letters %>
+  <input type="text" name="answer">
+  <input type="submit" value="Ask!">
+</form>
